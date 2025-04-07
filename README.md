@@ -1,2 +1,2 @@
-# homebrew-tap
-Homebrew tap for installing and managing rust-mcp-stack tools on Mac.
+# Rust MCP Homebrew tap
+Homebrew tap for installing `rust-mcp-stack` projects and tools using [Homebrew](https://brew.sh) on Mac.
