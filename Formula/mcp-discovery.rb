@@ -1,25 +1,25 @@
 class McpDiscovery < Formula
   desc "A command-line tool written in Rust for discovering and documenting MCP Server capabilities."
   homepage "https://github.com/rust-mcp-stack/mcp-discovery"
-  version "0.1.3"
+  version "0.1.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.3/mcp-discovery-aarch64-apple-darwin.tar.xz"
-      sha256 "c4f5d3495cb99886207418ae50686db2030b7fdd2d16dcbbde8ecdbb499135a1"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.4/mcp-discovery-aarch64-apple-darwin.tar.xz"
+      sha256 "9ea39558f79cd435505dbcceefee8448f86179d883a0afb0e52c5221f62db926"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.3/mcp-discovery-x86_64-apple-darwin.tar.xz"
-      sha256 "f801b2b98727ef5c7f31189f444164fcf25385d21dfb24799d2afc574b60c9fe"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.4/mcp-discovery-x86_64-apple-darwin.tar.xz"
+      sha256 "960a288009403e76007514a6f3b7a40514c4c1165c31c91441522d23fbb90170"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.3/mcp-discovery-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1ef3ec91c371af6af2393e21d5df2a975f24001fc1dfc9292dbc8ceadaf88d1c"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.4/mcp-discovery-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7253b3902f35fbd8b9e9f0f9526efea0a04b3b1b77bdd07004ae002ffd068646"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.3/mcp-discovery-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e11c70f40c4e19effa4d56b103610c729ef8d158fc9af94dd640eec3f4240057"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.4/mcp-discovery-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8f2c13a8670fa61448fe75942296a39f2b3730a3a5b1bad5e1a9924ec3d04416"
     end
   end
 
