@@ -1,27 +1,28 @@
 class McpDiscovery < Formula
   desc "A command-line tool written in Rust for discovering and documenting MCP Server capabilities."
   homepage "https://rust-mcp-stack.github.io/mcp-discovery"
-  version "0.1.5"
+  version "0.1.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.5/mcp-discovery-aarch64-apple-darwin.tar.xz"
-      sha256 "774e952d876e61b9f901a6a43ad2b99268dbe0158f02294720eb6bd03bc47fa7"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.6/mcp-discovery-aarch64-apple-darwin.tar.xz"
+      sha256 "db7b4b03a012feefe5ae270859d12167d08d86e1a1ab122d09caef12f91ecb60"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.5/mcp-discovery-x86_64-apple-darwin.tar.xz"
-      sha256 "147e1566b79fbd16de7e6f8c264b4ef720c3b1a6b70b87c7f03c57eec90967a1"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.6/mcp-discovery-x86_64-apple-darwin.tar.xz"
+      sha256 "8a25fb4eabcd3c084bef50ebc419afb4bf4f5f8fb8fcc765f8c052727f6c0cee"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.5/mcp-discovery-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6b2ced1cea455bc319580e58e0627b7458f6ce75ba9c91e8ac6644832a05f305"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.6/mcp-discovery-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7608fedfac400ee76d1c859e5dacdc2dc41c26d517d98737c401990f64a345a3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.5/mcp-discovery-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5bbfaaeeee6efc9149e1d82437ecd1277ad97417b5723583d07596b594e064f5"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.6/mcp-discovery-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0f5a940f8cbfb62689a2c54f5b09e8fd9b5797a8f442295c4dd46d882a4c2e88"
     end
   end
+  license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
