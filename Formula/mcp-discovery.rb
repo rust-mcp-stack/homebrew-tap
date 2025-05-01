@@ -1,25 +1,25 @@
 class McpDiscovery < Formula
   desc "A command-line tool written in Rust for discovering and documenting MCP Server capabilities."
-  homepage "https://github.com/rust-mcp-stack/mcp-discovery"
-  version "0.1.4"
+  homepage "https://rust-mcp-stack.github.io/mcp-discovery"
+  version "0.1.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.4/mcp-discovery-aarch64-apple-darwin.tar.xz"
-      sha256 "9ea39558f79cd435505dbcceefee8448f86179d883a0afb0e52c5221f62db926"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.5/mcp-discovery-aarch64-apple-darwin.tar.xz"
+      sha256 "774e952d876e61b9f901a6a43ad2b99268dbe0158f02294720eb6bd03bc47fa7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.4/mcp-discovery-x86_64-apple-darwin.tar.xz"
-      sha256 "960a288009403e76007514a6f3b7a40514c4c1165c31c91441522d23fbb90170"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.5/mcp-discovery-x86_64-apple-darwin.tar.xz"
+      sha256 "147e1566b79fbd16de7e6f8c264b4ef720c3b1a6b70b87c7f03c57eec90967a1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.4/mcp-discovery-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7253b3902f35fbd8b9e9f0f9526efea0a04b3b1b77bdd07004ae002ffd068646"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.5/mcp-discovery-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "6b2ced1cea455bc319580e58e0627b7458f6ce75ba9c91e8ac6644832a05f305"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.4/mcp-discovery-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8f2c13a8670fa61448fe75942296a39f2b3730a3a5b1bad5e1a9924ec3d04416"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.5/mcp-discovery-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5bbfaaeeee6efc9149e1d82437ecd1277ad97417b5723583d07596b594e064f5"
     end
   end
 
