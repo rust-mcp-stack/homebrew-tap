@@ -1,25 +1,25 @@
 class McpDiscovery < Formula
   desc "A command-line tool written in Rust for discovering and documenting MCP Server capabilities."
   homepage "https://rust-mcp-stack.github.io/mcp-discovery"
-  version "0.1.11"
+  version "0.1.12"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.11/mcp-discovery-aarch64-apple-darwin.tar.xz"
-      sha256 "ff84d4c58c52da06e00714d0022eac615c68ffdaec7ead996ecd99b0619df642"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.12/mcp-discovery-aarch64-apple-darwin.tar.xz"
+      sha256 "f4838507ccae855816080fe90c3196b251c91a2985ecda9a3d4a94f109faf5c5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.11/mcp-discovery-x86_64-apple-darwin.tar.xz"
-      sha256 "a34bb067e2b8ad339d2faa98f369a3c590df9afa75e13b0bd7c8f2529e20ede8"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.12/mcp-discovery-x86_64-apple-darwin.tar.xz"
+      sha256 "04f2b4bcd466f52ea657e518321e23becc964edb24f363253e2b544be1b18d0f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.11/mcp-discovery-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1b8b361ba70a06954be2a68835eb1329d3c478d2dc5786f938e76355f2bdb6c3"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.12/mcp-discovery-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f9935cee52488d4a851dbfc28dbe35cf5feda897b946602a347e58f1db53cd1f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.11/mcp-discovery-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7c1807bfb53f638f797c64164bd77705ece2f4aa815a50e7cb0de0fe14c4307e"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.1.12/mcp-discovery-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "02581b330cad22a59dffd1cfe08f3e79098269eb7fa4cf2c6bd8ae5d6215b2c8"
     end
   end
   license "MIT"
