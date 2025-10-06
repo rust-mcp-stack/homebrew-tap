@@ -1,25 +1,25 @@
 class RustMcpFilesystem < Formula
   desc "Blazing-fast, asynchronous MCP server for seamless filesystem operations."
   homepage "https://github.com/rust-mcp-stack/rust-mcp-filesystem"
-  version "0.3.4"
+  version "0.3.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.3.4/rust-mcp-filesystem-aarch64-apple-darwin.tar.gz"
-      sha256 "f2d2a4a35df55500d3302b58f62a64534ee5fbd40a9b8cfdb431805a19c1daeb"
+      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.3.5/rust-mcp-filesystem-aarch64-apple-darwin.tar.gz"
+      sha256 "c150802c5eb489d44a98640ead70b41b936e7de8a048096c53caaaf29250ba38"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.3.4/rust-mcp-filesystem-x86_64-apple-darwin.tar.gz"
-      sha256 "aeb120f76e9ccca0ec3edd4cffe3469974a5a4fb1f16287766feac4baf24f0db"
+      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.3.5/rust-mcp-filesystem-x86_64-apple-darwin.tar.gz"
+      sha256 "c3c3ea4814c25939543e75f314874684e88e2af2d1764cca969374926fd055f3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.3.4/rust-mcp-filesystem-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7f631bc535d7f6df8305370212eed0640d1e2391e5c99bc7501e75da977d3882"
+      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.3.5/rust-mcp-filesystem-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3cd3c1b7736f881a308a4328bdde315991c3dc3e35c375132503d77e8d178249"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.3.4/rust-mcp-filesystem-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3c30a68df37270dfcc7b835adc33ef95ab5ab70ad11a5b90eb882cd46e6c547b"
+      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.3.5/rust-mcp-filesystem-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "53c2622e1eb8ca85225296472d81819c7a1ea246eba747fb36a1fad82ad40b63"
     end
   end
 
