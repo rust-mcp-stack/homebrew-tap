@@ -1,25 +1,25 @@
 class McpDiscovery < Formula
   desc "A command-line tool written in Rust for discovering and documenting MCP Server capabilities."
   homepage "https://rust-mcp-stack.github.io/mcp-discovery"
-  version "0.2.4"
+  version "0.2.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.2.4/mcp-discovery-aarch64-apple-darwin.tar.xz"
-      sha256 "d7b94bd88b24261e4b9d8b4270fc67ec0a57f4ac70384433154551410cece96a"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.2.5/mcp-discovery-aarch64-apple-darwin.tar.xz"
+      sha256 "8ec8697e41b208f5a66061b615cf5c3ec4264cdf5d7d12e7ca040661891818a3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.2.4/mcp-discovery-x86_64-apple-darwin.tar.xz"
-      sha256 "6a80ae94a641af972335beabf67323113a2aa4feea1074d84d1146dd3d13d4e9"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.2.5/mcp-discovery-x86_64-apple-darwin.tar.xz"
+      sha256 "bbf4146003c35043dbb8d8d732af65196672af217488931f433fa975f591a698"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.2.4/mcp-discovery-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "22c84a5f0f221602b05784697ae04570085865758aecff640d8539a82533ce10"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.2.5/mcp-discovery-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ebb5a243256b3a74f4df1509c8cd0ae67483c2062e32815b3fedd19f43cc9f03"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.2.4/mcp-discovery-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5e57f1653deb3b2d3b65de9c492db4e4a224f557eba4714744dc38d76cd5670f"
+      url "https://github.com/rust-mcp-stack/mcp-discovery/releases/download/v0.2.5/mcp-discovery-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ede19b0e8a6d960ddb3cf0abd7d33e791ad94aecfe65d94c33c6011bd5291ba9"
     end
   end
   license "MIT"
