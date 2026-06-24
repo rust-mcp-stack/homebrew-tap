@@ -1,25 +1,25 @@
 class Oauth2TestServer < Formula
   desc "A fast, fully configurable, in-memory OAuth 2.0 + OpenID Connect authorization server for testing, zero-HTTP mode and DCR support for testing auth flow in MCP Servers and MCP Clients"
   homepage "https://github.com/rust-mcp-stack/oauth2-test-server"
-  version "0.2.2"
+  version "0.2.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/oauth2-test-server/releases/download/v0.2.2/oauth2-test-server-aarch64-apple-darwin.tar.xz"
-      sha256 "414d25dd0dc95e7a593fc3c9a17f52fb7b3e508a15537798618b6ccea459db47"
+      url "https://github.com/rust-mcp-stack/oauth2-test-server/releases/download/v0.2.3/oauth2-test-server-aarch64-apple-darwin.tar.xz"
+      sha256 "52401a347fdedbe71dce831ffafd32c61462e17c38af0ca1f439a6e51d64fc9b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/oauth2-test-server/releases/download/v0.2.2/oauth2-test-server-x86_64-apple-darwin.tar.xz"
-      sha256 "bffcee0986b84fb311c3b9778d08ed827b5953b5a0bc7e0d4ac28a8b3a1c0c8e"
+      url "https://github.com/rust-mcp-stack/oauth2-test-server/releases/download/v0.2.3/oauth2-test-server-x86_64-apple-darwin.tar.xz"
+      sha256 "111ff7f57120fe8df4a02fe91fc444037acec3d725f6aca945a90f6aabb3687e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/oauth2-test-server/releases/download/v0.2.2/oauth2-test-server-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7faa1a625a7d6d3bd3fa79f4768f97393675b22bca6f600d647104f7278fe8f1"
+      url "https://github.com/rust-mcp-stack/oauth2-test-server/releases/download/v0.2.3/oauth2-test-server-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "209d6084885b1d5bdb2c792cb1573fe032d4ce17ffbe25902a81f17bcd4d15b8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/oauth2-test-server/releases/download/v0.2.2/oauth2-test-server-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "64deccb6738c548bf17078996b61747356ba5fdfd6a3424969272142a2ee31dd"
+      url "https://github.com/rust-mcp-stack/oauth2-test-server/releases/download/v0.2.3/oauth2-test-server-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "779423c5b7192b445107a87628747bfbbc753a2e07742f80461d8883b3912292"
     end
   end
   license "MIT"
