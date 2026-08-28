@@ -1,25 +1,25 @@
 class RustMcpFilesystem < Formula
   desc "Blazing-fast, asynchronous MCP server for seamless filesystem operations."
   homepage "https://github.com/rust-mcp-stack/rust-mcp-filesystem"
-  version "0.4.3"
+  version "0.4.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.4.3/rust-mcp-filesystem-aarch64-apple-darwin.tar.gz"
-      sha256 "960090466c5dd43ef14969249caa551a1cc68c1e722cf83b4aca71d47493b070"
+      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.4.4/rust-mcp-filesystem-aarch64-apple-darwin.tar.gz"
+      sha256 "7af570caec994c847287accb794994f2638956cc2ee6502ad461daeafdcefcb5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.4.3/rust-mcp-filesystem-x86_64-apple-darwin.tar.gz"
-      sha256 "a194b4d2dee2222aec9f9178a919b8e32a4354694d43ae78e003f234efa9a5fa"
+      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.4.4/rust-mcp-filesystem-x86_64-apple-darwin.tar.gz"
+      sha256 "34918d63d1cc1597cb992eafed6bc1b8880b228baea2f251df422b9bddb4f244"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.4.3/rust-mcp-filesystem-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1b7a52d9315a2317a600f9b9cfbc71ede0f819332dfeb9cdda131010d6c42d99"
+      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.4.4/rust-mcp-filesystem-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ee2dc35e863ae8f15dd3dc1e16640edb217fac1090c493c626f6c7494e5ce611"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.4.3/rust-mcp-filesystem-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6da3dbf8950e16e93f37b5fd0a262ecabddc14f51509ff4de9c41f25fa33d1b1"
+      url "https://github.com/rust-mcp-stack/rust-mcp-filesystem/releases/download/v0.4.4/rust-mcp-filesystem-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "12b9d045d53c13d2932871f369320153ff2210129f4176a558d0b8ba82850e85"
     end
   end
   license "MIT"
@@ -48,10 +48,18 @@ class RustMcpFilesystem < Formula
   end
 
   def install
-    bin.install "rust-mcp-filesystem" if OS.mac? && Hardware::CPU.arm?
-    bin.install "rust-mcp-filesystem" if OS.mac? && Hardware::CPU.intel?
-    bin.install "rust-mcp-filesystem" if OS.linux? && Hardware::CPU.arm?
-    bin.install "rust-mcp-filesystem" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "rust-mcp-filesystem"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "rust-mcp-filesystem"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "rust-mcp-filesystem"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "rust-mcp-filesystem"
+    end
 
     install_binary_aliases!
 
